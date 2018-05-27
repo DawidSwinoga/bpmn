@@ -8,6 +8,6 @@ import org.camunda.bpm.engine.delegate.JavaDelegate;
  */
 public class EndProcess implements JavaDelegate {
     public void execute(DelegateExecution delegateExecution) throws Exception {
-        System.out.println("End listener: " + delegateExecution.getVariable("customerId"));
+        System.out.println("Rigcz ok: " + delegateExecution.getVariable("customerId"));
     }
 }

@@ -21,7 +21,7 @@ public class RigczRest {
     @PostMapping("/rest/api/{processId}")
     public void getRigcz(@PathVariable String processId, @RequestParam Boolean rigcz) {
         System.out.println("Proces id: " + processId + " is rigcz: " + rigcz);
-        MessageCorrelationResult result = runtimeService.createMessageCorrelation("msg_test")
+        MessageCorrelationResult result = runtimeService.createMessageCorrelation("new_message")
                 .processInstanceBusinessKey(processId)
                 .setVariable("rigcz", rigcz)
                 .correlateWithResult();
